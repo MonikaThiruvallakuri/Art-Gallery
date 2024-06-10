@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="https://previews.123rf.com/images/branche/branche1312/branche131200093/24355125-library-icon.jpg"/>
+    <script src="https://kit.fontawesome.com/24c9284c73.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("https://t3.ftcdn.net/jpg/05/71/20/56/360_F_571205629_onFrxqE3KmdhZZ3Tm91VdsDj9szAmlWM.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-position: center; 
+            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        } 
+        .back{
+    background-color: rgba(76, 75, 75, 0.5);
+    height: 103.5vh;
+    width: 100%;
+    margin-top: -30px;
+    padding:20px;
+    margin-bottom: 0;
+    
+    
+    }
+        .main {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            margin-top: 10%;
+        }
+        #xmark{
+            float: right;
+            font-size: 20px;
+            cursor: pointer;
+            color: black;
+        }
+        .wrapper {
+            width: 350px;
+            padding: 20px;
+            color: black;
+            background: white transparent;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .formy {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+        }
+        .head {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        } 
+        label {
+            color: white;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            border: 1px solid white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 30px;
+        }
+        input[type="checkbox"] {
+            accent-color: black;
+        }
+        .check {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .check div, .check a {
+            font-size: 14px;
+        }
+        .btn {
+            background-color: #393838;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: white;
+            color: #0e0d0d;
+            border: 1px solid #020202;
+        }
+        .last {
+            margin-top: 20px;
+            text-align: center;
+        }
+        h6 {
+            color: white;
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+        }
+        a:hover{
+            color: white;
+            text-decoration: underline;
+        }
+        hr{
+            width: 200px;
+            margin-left: 45px;
+        }
+        .both{
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <section class="main">
+        <div class="wrapper">
+            <a href="./frontpage.html"><i class="fa-solid fa-xmark" id="xmark"></i></a>
+            <form class="formy">    
+                <h1 class="head">Login</h1> 
+                <label><i class="fa-solid fa-user"></i> Username</label>
+                <input type="text" placeholder="Enter Username" name="username" required/>
+                <label><i class="fa-solid fa-lock"></i> Password</label>
+                <input type="password" placeholder="Enter password" name="password" required/>
+                <div class="check">
+                    <div>
+                        <input type="checkbox"/>&nbsp;<label class="both">Remember me</label>
+                    </div>
+                    <a href="#" >Forgot Password</a>
+                </div>
+                <button class="btn">Login</button><br>
+                <hr/> 
+                <div class="last">
+                    <h6>Don't have an account?<a href="./signup.html">&nbsp;Register<i class="fa-solid fa-right-to-bracket"></i></a></h6>
+                </div>
+            </form>
+        </div> 
+    </section>
+    </div>        
+</body>
+</html>

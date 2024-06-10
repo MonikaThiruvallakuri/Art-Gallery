@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="icon" href="https://previews.123rf.com/images/branche/branche1312/branche131200093/24355125-library-icon.jpg"/>
+    <script src="https://kit.fontawesome.com/24c9284c73.js" crossorigin="anonymous"></script>
+    <style>
+         body {
+            background-image: url("https://t3.ftcdn.net/jpg/05/71/20/56/360_F_571205629_onFrxqE3KmdhZZ3Tm91VdsDj9szAmlWM.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+         }
+        *{
+                box-sizing: border-box;
+                margin: 0;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
+            }
+            .back{
+    background-color: rgba(76, 75, 75, 0.5);
+    height: 103.5vh;
+    width: 100%;
+    margin-top: -30px;
+    padding:20px;
+    margin-bottom: 0;
+    }
+        .main{
+            display: flex;
+            box-sizing:content-box;
+            
+            justify-content: center;
+            border: 10px grey;
+            /* filter: blur(8px);
+            -webkit-filter: blur(8px); */
+        }
+        .first{
+                width: 50%;
+        }
+        .ima{
+                width: 100%;
+            }
+        .two{
+             width: 50%; 
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 20px;
+            color: white;
+            background: white transparent;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+        .temp{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                border: 1px solid rgb(96, 96, 96);
+                border-radius: 20px;
+                padding: 4%;
+                margin-top: 10%; 
+                z-index: 2; 
+                 
+            }
+            .head{
+                color: white;
+                text-align: center;
+                margin-top: 3%;
+            }
+            #xmark{
+            float: right;
+            font-size: 20px;
+            cursor: pointer;
+            color: black;
+            margin-top: -15px;
+            padding: 0;
+            margin-right: -5px;
+            }
+            label{
+                color: white;
+                font-size: 20px;
+                margin-top: 2%;
+                margin-bottom: 0.5%;
+            }
+            input[type="text"],[type="email"],[type="password"]{
+                border: 1px solid grey;
+                padding: 2%;
+                box-shadow: 2px,2px,2px grey;
+                border-radius: 30px;
+            }
+            input[type="checkbox"]{
+                accent-color: black;
+            }
+            .check{
+                padding: 1%;
+               
+            }
+            .btn{
+                background-color: #434343;
+                color: rgb(255, 255, 255);
+                border: none;
+                padding: 2%;
+                width: 200px;
+                margin-left: 30%;
+                margin-top: 10px;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .btn:hover{
+                background-color: rgb(255, 255, 255);
+                color: black;
+                border: 1px solid black;
+                border-radius: 20px;
+               
+            }
+            .last{
+                margin-top: 2%;
+            }
+            h6{
+                color: white;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                margin-top: 1%;
+            }
+            a{
+                text-decoration: none;
+                color: #ffffff;
+            }
+            a:hover{
+            color: white;
+            text-decoration: underline;
+        }
+          
+            .font{
+                font-size: 13px;
+            }
+    </style>
+    
+</head>
+<body>
+    <div class="back">
+        <section class="main">
+            <div class="two">
+                <form class="temp"><a href="./frontpage.html"><i class="fa-solid fa-xmark" id="xmark"></i></a>
+                    <h1 class="head">Signup</h1>
+                    <label>Firstname</label>
+                    <input type="text" placeholder="Enter firstname" name="firstname" required/>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter email" name="email" required/>
+                    <label>Phonenumber</label>
+                    <input type="text" placeholder="Enter number" name="number" required/>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" name="password" required/>
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="confirm password" name="confirm password" required/>
+                    <div class="check">
+                        <input type="checkbox" required/>&nbsp;&nbsp;<label class="font">I Accept Terms and Conditions</label>
+                    </div>
+                    <a href="./frontpage.html" id="login"><button class="btn">Submit</button></a><br/>
+                    <hr/>
+                    <div class="last">
+                        <h6>Already have an account?<a href="./login.html">&nbsp;Login <i class="fa-solid fa-right-to-bracket"></i></a></h6>
+                        <h6><a href="#">Forgot Password ?</a></h6>
+                </form>
+            </div>
+    
+        </section>
+    </div>
+</body>
+</html>
